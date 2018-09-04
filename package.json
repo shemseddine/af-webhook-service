@@ -1,0 +1,11 @@
+{
+  "name": "webhook-service",
+  "version": "1.0.0",
+  "description": "Webhook server",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-fetch": "^2.2.0"
+  }
+}

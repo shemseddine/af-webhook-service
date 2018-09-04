@@ -1,0 +1,20 @@
+{
+  "disabled": false,
+  "bindings": [
+    {
+      "name": "queueItem",
+      "type": "queueTrigger",
+      "direction": "in",
+      "queueName": "event-queue",
+      "connection": "AzureWebJobsStorage"
+    },
+    {
+      "name": "webhooksubscription",
+      "tableName": "webhooksubscriptions",      
+      "type": "table",
+      "direction": "in",
+      "connection": "AzureWebJobsStorage",
+      "filter": "PartitionKey eq '{userId}' and RowKey eq '{eventType}'"
+    }
+  ]
+}
